@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Михаил Фатьянов — Unity разработчик</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="navbar">
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>            
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<div class ="caption">
+    <h1>Привет, я Михаил Фатьянов</h1>
+    <h2>Unity разработчик</h2>
+</div>
+<h2 class="block-header">Обо мне:</h2>
+<section id="about">
+    <div class="list-block">
+        <div class="about-text">
+            <p>Работал над разными типами проектов: от казуальных игр до промышленных приложений.
+                Основной интерес — архитектура, производительность и масштабируемость систем.
+                Нравится разбираться в сложных задачах и находить для них простые решения.
+            </p> 
+            <p><b>Опыт:</b> 4+ года</p>
+            <p><b>Хобби:</b> игры, GameDev, CGI, программирование</p>
+        </div>  
+        <div class ="about-image">            
+            <img src="assets/images/photo.jpg" alt="Me">            
+        </div> 
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="block-header">Навыки:</h2>
+    <div class="list-block">
+        <h3>🎮 Unity</h3>
+        <ul>
+            <li>DI контейнеры: Zenject, VContainer</li>
+            <li>ECS фреймворки: LeoECS</li>
+            <li>Интерфейс: Legacy Unity UI, UI Toolkit</li>
+            <li>Анимация: DOTween, Timeline, Skeletal Animation</li>
+            <li>Работа с распознаванием голоса - Vosk</li>
+            <li>Оптимизация производительности, профайлинг графики и кода</li>
+            <li>Работа с шейдерами, ShaderGraph</li>            
+        </ul>
+    </div>     
+    
+    <div class="list-block">
+        <h3>📚 Другие навыки</h3>
+        <ul>
+            <li>Работа с Git</li>
+            <li>Работа с серверами и Backend для игр</li>           
+            <li>3D моделирование в Blender</li>         
+        </ul>
+    </div>
+</section>
+<section id="projects">
+    <h2 class="block-header">Проекты:</h2>
+
+    <div class="project">
+        <h3>Animi Strike: Evolve & Survive</h3>
+        <h4><b>Описание:</b></h4>
+        <p>Мобильная игра в жанре Survivors</p>
+        <p></p>
+        <ul>
+            <li>Разрабатывал и дорабатывал UI на базе UI Toolkit.</li>
+            <li>Сверстал 4 ключевых экрана с нуля и модернизировал большую часть существующих UI экранов</li>
+            <li>Производил рефакторинг легаси кода для UI систем</li>           
+            <li>Интегрировал интерактивные UI-компоненты и систему анимаций (Timeline + кастомный tween-плагин).</li>           
+        </ul>
+        <figure class="tall">
+            <img src="assets/images/animi_strike_ss_01.png" alt="Animi Strike Inventory Screen">
+            <figcaption>Экран инвентаря</figcaption>
+        </figure>
+        <figure class="tall">
+            <img src="assets/images/animi_strike_ss_02.png" alt="Animi Strike Main Menu">
+            <figcaption>Главное меню</figcaption>
+        </figure> 
+        <figure class="tall">
+            <img src="assets/images/animi_strike_ss_03.png" alt="Animi Strike Gameplay">
+            <figcaption>Игровой процесс</figcaption>
+        </figure>
+        <p>Ресурсы:</p>
+        <p><a href="https://www.youtube.com/shorts/v3qgrOz-Goc">🔗 Промо</a></p>
+    </div>
+    
+    <div class="project">
+        <h3>GedoTab</h3>
+        <span class="warning">Проект под NDA</span>        
+        <h4><b>Описание:</b></h4>        
+        <p>Нодовый редактор, работающий на планшете, для составления чертежа трубопровода и редактирования его параметров</p>
+        <p></p>
+        <ul>            
+            <li>Разработал систему оптимизации мешей - MeshCombiner, которая значительно уменьшала кол-во вызовов draw call на мобильных устройствах.</li>
+            <li>Разработал систему сериализации, хранения и отправки на сервер математической модели трубопровода.</li>
+            <li>Разработал систему авторизации с возможностью войти в приложение, используя NFC карту.</li>
+            <li>Руководил подразделением поддержки и сопровождения проекта.</li>
+        </ul>
+
+        <figure>
+            <img src="assets/images/gedo-tablet.png" alt="GedoTab Tablet version">
+            <figcaption>Планшетная версия приложения GedoTab</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/images/gedo-laptop.png" alt="GedoTab PC version">
+            <figcaption>PC версия приложения GedoTab</figcaption>
+        </figure>
+        <p>Ресурсы:</p>
+        <p><a href="https://gedocorp.ru/">🔗 Сайт-презентация</a></p>
+    </div>
+
+    <div class="project">        
+        <h3>Audio Visualization</h3>
+        <h4><b>Описание:</b></h4>
+        <p>Мой технический пет-проект, визуализирующий аудиосигнал в реальном времени через 3D-объекты. Динамичная сцена, изменяющаяся под музыку с помощью спектрального анализа и ShaderGraph.</p>
+        <figure>
+            <img src="assets/gifs/audiovisualisation-demo.gif" alt="Audio Visualisation Demo">
+            <figcaption>Аудиовизуализация в работе</figcaption>
+        </figure>       
+        <p>Ресурсы:</p>
+        <p><a href="https://www.youtube.com/watch?v=grpixQeeDiQ">🔗 YouTube</a></p>
+        <p><a href="https://github.com/MichaelFatianov/AudioVisualization">🔗 GitHub</a></p>
+    </div>    
+
+    <div class="project">
+        <h3>Jelly Swipe</h3>        
+        <h4><b>Описание:</b></h4>
+        <p>Казуальная аркада, интерпретация игры Tomb of the Mask.</p>
+
+        <ul>
+            <li>Пришел на проект, когда он был 2D прототипом. Заменил графику на 3D, исправил множество багов и довёл проект до релиза в Google Play.</li>          
+        </ul>        
+        <p class="warning">Проект закрыт</p>        
+        <figure class="tall">
+            <img  src="assets/gifs/jellyswipe-demo.gif" alt="Jelly Swipe Demo">
+            <figcaption>Демонстрация геймплея Jelly Swipe</figcaption>
+        </figure>
+    </div>
+
+    <div class="project">
+        <h3>Ocean Nomad: Survival Simulator</h3>
+        <h4><b>Описание:</b></h4>
+        <p>Мобильная игра-выживание: крафт, защита от врагов в океане, строительство плота. На Google Play >100 млн загрузок.</p>
+        <ul>
+            <li>Участвовал в разработке прототипа и первых обновлений.</li>
+        </ul>       
+        <figure>
+            <img  src="assets/images/raft-ss.png" alt="Raft Survival screenshot">
+            <figcaption>Промо Ocean Nomad: Survival Simulator</figcaption>
+        </figure>
+        <p>Ресурсы:</p>
+        <p><a href="https://play.google.com/store/apps/details?id=ocean.nomad.survival.simulator">🔗 Play Store</a></p>
+    </div>
+
+    <div class="project">
+        <h3>PockeMem</h3>
+        <h4><b>Описание:</b></h4>
+        <p>Игра, созданная на Siberian Game Jam 2022 (команда MFG).</p> 
+        <p>Юмористичный квест, где игроку предстоит выбраться из комнаты с помощью случайных предметов. Игра получила 4‑е место в категории Best Innovation.</p>
+
+        <ul>
+            <li>Реализовал проект за 72 часа.</li>
+        </ul>
+        <p></p>
+        <figure>
+            <img src="assets/images/pockemem-ss.png" alt="PockeMem screenshot">
+            <figcaption>Скриншот из игры PockeMem</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/gifs/pockemem-demo.gif" alt="PockeMem gameplay">
+            <figcaption>Демо PockeMem</figcaption>
+        </figure>
+        <p>Ресурсы:</p>
+        <p><a href="https://kr1zaril.itch.io/pockemem">🔗 itch.io</a></p>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>📫 Контакты: <a href="mailto:mishafatianov@gmail.com">mishafatianov@gmail.com</a> | <a href="https://github.com/MichaelFatianov">GitHub</a> | <a href="https://t.me/BlindingRed">Telegram</a></p>
+</footer>
+</body>
+</html>
